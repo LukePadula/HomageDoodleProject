@@ -1,0 +1,774 @@
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 79px;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  list-style-type: none;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+.sub-text {
+  padding: 5px;
+  text-align: center;
+  color: #636364;
+}
+
+/* Header */
+.header-top-level-cont {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-icon {
+  position: relative;
+  top: 1.5px;
+  margin-left: 10px;
+}
+
+.brand-button-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(10, 92, 72);
+  color: white;
+  border: none;
+  border-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  width: 200px;
+}
+
+.brand-button-light {
+  background-color: white;
+  border: 1px solid rgb(10, 92, 72);
+  border-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  width: 200px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-action button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-action button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 248, 255);
+  border: 1px solid rgb(51, 182, 255);
+  border-radius: 100px;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-action small {
+  display: none;
+}
+
+/* BUTTON HOVER */
+.nav-action button:hover {
+  background-color: white;
+}
+
+.nav-action button svg {
+  color: rgb(0, 111, 213);
+}
+
+.menu-options,
+.menu-footer-log-in-options,
+.wide-header-log-in-options {
+  display: none;
+}
+
+.menu-options {
+  position: absolute;
+  background-color: rgb(235, 248, 255);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  left: 0;
+  right: 0;
+}
+
+.menu-footer-log-in-options {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.log-in {
+  background-color: rgb(235, 248, 255);
+  color: rgb(10, 92, 72);
+  border: 1px solid rgb(10, 92, 72);
+  width: 200px;
+  padding: 15px;
+}
+
+.log-in a {
+  color: rgb(10, 92, 72);
+}
+
+.log-in:hover {
+  background-color: rgb(172, 200, 193);
+}
+
+.log-in:hover a {
+  color: rgb(0, 0, 0);
+}
+
+.sign-up {
+  width: 200px;
+  padding: 15px;
+}
+
+.sign-up a {
+  color: rgb(255, 255, 255);
+}
+
+.sign-up:hover a {
+  color: rgb(0, 0, 0);
+}
+
+nav:hover .menu-options {
+  display: initial;
+  top: 60px;
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+/* Menu hover */
+nav a:hover,
+nav ul > li:hover {
+  color: #006fd5;
+}
+
+.link:hover {
+  color: rgb(51, 182, 255);
+}
+
+button:hover {
+  background-color: rgb(172, 200, 193);
+  color: black;
+}
+
+.sell-point-intro > p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 15px;
+}
+
+.sell-point-intro {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.try-action {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+}
+
+.try-action button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding: 18px;
+}
+
+.try-action button a {
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+  margin-right: 8px;
+}
+
+.intro-image {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 480px;
+}
+
+/* Boxes */
+.icon-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.icon-content li {
+  list-style: none;
+}
+
+.icon-content li p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.sell-point-1 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.sell-point-1 h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.sell-point-1 p {
+  font-size: 1.4rem;
+}
+
+.sell-point-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sell-point-2 h2 {
+  font-size: 2rem;
+}
+
+.sell-point-2 p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.sell-point-2 a {
+  color: rgb(0, 111, 213);
+  margin-bottom: 10px;
+}
+
+/* Customer types */
+.customer-type {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.customer-type h3 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+.customer-type p {
+  font-size: 1.1rem;
+}
+
+.customer-type-img-cont {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+  background-color: rgb(10, 92, 72);
+  padding: 30px;
+}
+
+.customer-type-1-img img {
+  height: 64px;
+}
+
+.customer-type-img-cont img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.customer-type button {
+  width: 150px;
+  padding: 18px;
+}
+
+.customer-type button a {
+  color: rgb(10, 92, 72);
+}
+
+/* Sell point 3 */
+.sell-point-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(14, 56, 48);
+  padding: 40px;
+  margin-top: 25px;
+}
+
+.sell-point-3 button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  padding: 18px;
+}
+
+.sell-point-3 button a {
+  color: rgb(255, 255, 255);
+}
+
+.sell-point-3 h2 {
+  margin-left: 20px;
+  color: white;
+  font-size: 2.1rem;
+  text-align: start;
+}
+
+.sell-point-3-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sell-point-3-content > p {
+  color: rgb(183, 234, 200);
+  margin-left: 20px;
+  font-size: 1.3rem;
+  margin-top: 0;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 30px;
+}
+
+.sell-point-3 .sub-text {
+  color: rgb(172, 200, 193);
+  text-align: start;
+  padding: 15px;
+}
+
+.sell-point-3 img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sell-point-4 {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.sell-point-4 h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.sell-point-4 p {
+  font-size: 1.4rem;
+}
+
+.sell-point-4 a {
+  color: rgb(0, 111, 213);
+}
+
+/* sell-point-outro */
+.sell-point-outro {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sell-point-outro h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.sell-point-outro > p {
+  font-size: 1.4rem;
+}
+
+.sell-point-outro small {
+  color: rgb(10, 92, 72);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.sell-point-outro button {
+  width: 150px;
+  padding: 18px;
+}
+
+.sell-point-outro button a {
+  color: rgb(255, 255, 255);
+}
+
+/* footer */
+.footer-container {
+  padding: 30px;
+  background-color: rgb(253, 247, 237);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.footer-nav ul li ul li {
+  font-size: 0.9rem;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-bottom-links {
+  padding: 0;
+}
+
+.footer-bottom-links li a {
+  color: black;
+}
+
+.footer-bottom-links li a:hover {
+  color: #006fd5;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 150px;
+}
+
+.social-links a {
+  padding: 37px;
+}
+
+@media (max-width: 1000px) {
+  .icon-content li:hover p {
+    display: block;
+    position: absolute;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  /* header */
+  .actions {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .non-menu-actions {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .burger-icon {
+    display: none;
+  }
+  .menu-options {
+    display: initial;
+    justify-self: flex-start;
+    position: static;
+    background-color: white;
+    padding: 0;
+  }
+  .menu-options > ul {
+    display: flex;
+  }
+  .menu-options ul > li {
+    padding: 8px;
+  }
+  .menu-footer-log-in-options {
+    display: none;
+  }
+  .nav-action {
+    display: flex;
+    align-items: center;
+  }
+  .nav-action small {
+    color: rgb(0, 111, 213);
+    display: initial;
+  }
+  .nav-action button {
+    width: 150px;
+  }
+  .actions {
+    flex-direction: row-reverse;
+  }
+  .wide-header-log-in-options {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .wide-header-log-in-options div {
+    padding: 5px;
+  }
+  .wide-header-log-in-options button {
+    width: 80px;
+    height: 35px;
+  }
+  /* menu drop down */
+  .menu-options ul li:hover ul {
+    display: flex;
+    background-color: rgb(235, 248, 255);
+    display: block;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    /* top: 95px; */
+    left: 0;
+    right: 0;
+  }
+  .menu-options ul li:hover ul li {
+    margin-left: 100px;
+  }
+  /* sell point intro */
+  .intro-cont {
+    display: flex;
+    flex-direction: row;
+  }
+  /* icons */
+  .icon-content {
+    text-align: center;
+    margin: 100px;
+  }
+  .icon-content img {
+    display: initial;
+  }
+  .icon-content li {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .icon-content li p {
+    display: initial;
+    position: absolute;
+    width: 185px;
+    top: 20px;
+    left: -88px;
+    font-size: 1rem;
+  }
+  .sell-point-1 {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .sell-point-1 h2 {
+    font-size: 3rem;
+  }
+  .sell-point-2 {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .sell-point-2 h2 {
+    font-size: 3rem;
+  }
+  /* customer type */
+  .customer-type-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+  .customer-type {
+    flex-shrink: 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border: solid 1px rgb(10, 92, 72);
+    min-width: 250px;
+    max-width: 350px;
+  }
+  .customer-type p {
+    min-height: 70px;
+  }
+  .type-fix {
+    margin-bottom: 9px;
+  }
+  /* sell point 3 */
+  .sell-point-3 {
+    flex-direction: row-reverse;
+  }
+  .sell-point-3-img-cont {
+    display: flex;
+  }
+  .sell-point-3-content h2 {
+    font-size: 2.7rem;
+  }
+  .sell-point-3-content a {
+    font-size: 1rem;
+    padding-right: 20px;
+  }
+  .sell-point-3-img-cont img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sell-point-4 {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .sell-point-4 h2 {
+    font-size: 3rem;
+  }
+  .sell-point-outro {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .sell-point-outro h2 {
+    font-size: 3rem;
+  }
+  /* footer */
+  .footer-nav ul {
+    display: flex;
+  }
+  .footer-nav ul li {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 40px;
+  }
+  .footer-nav ul ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .footer-bottom {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .footer-bottom-links {
+    display: flex;
+  }
+  .footer-bottom-links li {
+    padding-left: 15px;
+  }
+  .social-links {
+    padding-left: 120px;
+  }
+  .social-links a {
+    padding: 0;
+  }
+}
+@media (min-width: 1700px) {
+  .header-top-level-cont {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+  .menu-options ul li:hover ul li {
+    margin-left: 450px;
+  }
+  .intro-cont {
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+  .sell-point-intro {
+    margin-right: 120px;
+  }
+  .sell-point-intro h1 {
+    padding-bottom: 15px;
+  }
+  .sell-point-intro > p {
+    padding-bottom: 15px;
+    margin-left: 0;
+  }
+  .icon-section {
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+  .customer-type-container {
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+  .sell-point-3 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+}/*# sourceMappingURL=style.css.map */

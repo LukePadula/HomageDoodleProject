@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free online meeting scheduling tool | Doodle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top-level-cont">
+        <div class="logo">
+          <svg
+            width="129"
+            height="24"
+            viewBox="0 0 129 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="Doodle Logo"
+            aria-hidden="true"
+            data-testid="at-logo"
+            class="dist__SvgDoodleLogo-sc-ob0vd6-17 irIyLU"
+          >
+            <path
+              d="M21.252 24a.61.61 0 00.612-.606V17.85H6.389V6.15H.612A.61.61 0 000 6.757v16.637A.61.61 0 00.612 24h20.64z"
+              fill="#0A5C48"
+            ></path>
+            <path
+              d="M27.64 17.85a.61.61 0 00.612-.607V.607A.61.61 0 0027.64 0H7a.61.61 0 00-.611.607V6.15h15.475v11.7h5.776z"
+              fill="#33B6FF"
+            ></path>
+            <path
+              d="M45.264 21.981c6.479 0 10.234-4.575 10.234-9.947 0-5.371-3.784-9.947-10.234-9.947h-7.569v19.894h7.569zM42.34 5.952h2.494c3.956 0 5.877 2.928 5.877 6.082 0 3.155-1.92 6.082-5.877 6.082H42.34V5.953zM64.555 22.35c4.73 0 7.655-3.04 7.655-7.218s-2.924-7.219-7.655-7.219c-4.759 0-7.683 3.041-7.683 7.22 0 4.177 2.924 7.218 7.683 7.218zm0-3.665c-2.092 0-3.297-1.478-3.297-3.553s1.205-3.552 3.297-3.552c2.064 0 3.297 1.477 3.297 3.552s-1.233 3.553-3.297 3.553zM81.353 22.35c4.73 0 7.655-3.04 7.655-7.218s-2.924-7.219-7.655-7.219c-4.759 0-7.683 3.041-7.683 7.22 0 4.177 2.924 7.218 7.683 7.218zm0-3.665c-2.092 0-3.296-1.478-3.296-3.553s1.204-3.552 3.296-3.552c2.065 0 3.297 1.477 3.297 3.552s-1.233 3.553-3.297 3.553zM101.196 10.244c-.745-1.393-2.322-2.33-4.329-2.33-4.013 0-6.565 3.126-6.565 7.218 0 4.121 2.38 7.219 6.508 7.219 1.92 0 3.641-.938 4.386-2.302v1.932h4.358V2.087h-4.358v8.157zm-3.124 8.497c-2.036 0-3.297-1.534-3.297-3.609s1.261-3.58 3.296-3.58c2.179 0 3.297 1.62 3.297 3.58 0 1.99-1.118 3.61-3.296 3.61zM112.238 21.981V2.087h-4.386v19.894h4.386zM129 14.422c0-3.866-2.924-6.509-7.225-6.509-4.501 0-7.454 2.729-7.454 7.22 0 4.575 2.896 7.218 7.598 7.218 3.669 0 6.45-1.79 6.88-4.49h-4.3c-.373.852-1.233 1.221-2.58 1.221-1.95 0-3.154-.966-3.24-2.756h10.206c.086-.768.115-1.194.115-1.904zm-10.321-.796c.029-1.677 1.175-2.785 3.068-2.785 1.863 0 2.895.966 2.924 2.785h-5.992z"
+              fill="#0A0B0C"
+            ></path>
+          </svg>
+        </div>
+        <div class="actions">
+          <div class="non-menu-actions">
+            <div class="nav-action">
+              <button>
+                <a href="#">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="button-icon"
+                    aria-label="action-add"
+                    aria-hidden="true"
+                    data-testid="at-icon"
+                    class="dist__SvgActionAdd-sc-ob0vd6-4 dvSLPz"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11 13v6h2v-6h6v-2h-6V5h-2v6H5v2h6z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <small>Create a Doodle</small>
+                </a>
+              </button>
+            </div>
+            <div class="wide-header-log-in-options">
+              <div>
+                <a href="#">Login</a>
+              </div>
+              <div>
+                <button class="brand-button-dark">
+                  <small>Sign up</small>
+                </button>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <div class="burger-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="burger-icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.692 7.615V5.308h16.616v2.307H3.692zm16.616 3.231v2.308H3.692v-2.308h16.616zm0 7.846H3.692v-2.308h16.616v2.308z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="menu-options">
+              <ul>
+                <li>
+                  Product
+                  <ul>
+                    <li>
+                      <a href="#">Booking page</a>
+                    </li>
+                    <li>
+                      <a href="#">1:1s</a>
+                    </li>
+                    <li>
+                      <a href="#">Group polls</a>
+                    </li>
+                    <li>
+                      <a href="#">Integrations</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Use cases
+                  <ul>
+                    <li>
+                      <a href="#">Recruiting</a>
+                    </li>
+                    <li>
+                      <a href="#">Sales</a>
+                    </li>
+                    <li>
+                      <a href="#">Board meetings</a>
+                    </li>
+                    <li>
+                      <a href="#">Freelancers and consultants</a>
+                    </li>
+                    <li>
+                      <a href="#">Education</a>
+                    </li>
+                    <li>
+                      <a href="#">Non-profit</a>
+                    </li>
+                    <li>
+                      <a href="#">Enterprise</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Professional
+                  <ul>
+                    <li>
+                      <a href="#">Individual</a>
+                    </li>
+                    <li>
+                      <a href="#">Teams</a>
+                    </li>
+                    <li>
+                      <a href="#">Enterprise</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>Pricing</li>
+                <li>
+                  Learn
+                  <ul>
+                    <li>
+                      <a href="#">How to's</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#">Help Center</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Contact
+                  <ul>
+                    <li>
+                      <a href="#">Support</a>
+                    </li>
+                    <li>
+                      <a href="#">Sales</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="menu-footer-log-in-options">
+                <div>
+                  <button class="brand-button-light log-in">
+                    <a>Log in</a>
+                  </button>
+                </div>
+                <div>
+                  <button class="brand-button-dark sign-up">
+                    <a>Sign up</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="intro-cont">
+        <section class="sell-point-intro">
+          <h1>Professional scheduling made easy</h1>
+          <p>
+            Doodle is the fastest and easiest way to schedule anything — from
+            meetings to the next great collaboration.
+          </p>
+          <div class="try-action">
+            <button class="brand-button-dark">
+              <a>Try it free</a>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="Arrow right icon"
+                aria-hidden="true"
+                data-testid="at-icon"
+                class="try-arrow"
+              >
+                <g clip-path="url(#arrow-right_svg__clip0)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 12a1 1 0 011-1h19.586l-6.293-6.293a1 1 0 111.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 01-1.414-1.414L20.586 13H1a1 1 0 01-1-1z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath>
+                    <path fill="currentColor" d="M0 0h24v24H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <small class="sub-text">No credit card required. </small>
+          </div>
+        </section>
+        <div class="intro-image">
+          <img src="/img/happy-customers.png" alt="Happy customers" />
+        </div>
+      </div>
+      <section class="icon-section">
+        <ul class="icon-content">
+          <li>
+            <img src="/icon-content-img/first-icon.png" alt="" />
+            <p>Trusted by 70,000+ companies</p>
+          </li>
+          <li>
+            <img src="/icon-content-img/second-icon.png" alt="" />
+            <p>2+ million meetings scheduled last month</p>
+          </li>
+          <li>
+            <img src="/icon-content-img/third-icon.png" alt="" />
+            <p>Enterprise-level security</p>
+          </li>
+          <li>
+            <img src="/icon-content-img/fourth-icon.png" alt="" />
+            <p>Start taking appointments in 5 minutes</p>
+          </li>
+        </ul>
+      </section>
+      <section class="sell-point-1">
+        <h2>Professionals of all types get more done with Doodle</h2>
+        <p>Get any kind of work or client meeting booked, fast.</p>
+      </section>
+      <section>
+        <div class="sell-point-2">
+          <h2>Scheduling for 1 to 10,000 people</h2>
+          <p>Doodle's made for teams of all sizes</p>
+          <a href="" class="link">Compare plans</a>
+        </div>
+        <div class="customer-type-container">
+          <div class="customer-type">
+            <div class="customer-type-img-cont customer-type-1-img">
+              <img src="/img/individuals-image.png" alt="Individuals" />
+            </div>
+            <h3>Individuals</h3>
+            <p>
+              Keep your calendar in order and book meetings with clients and
+              teammates faster.
+            </p>
+            <div class="customer-type-button-cont">
+              <button class="brand-button-light">
+                <a>View features</a>
+              </button>
+            </div>
+          </div>
+          <div class="customer-type">
+            <div class="customer-type-img-cont">
+              <img src="/img/teams-image.png" alt="Teams" />
+            </div>
+            <h3>Teams</h3>
+            <p>
+              Add teammates to invites and booking pages and use shared
+              calendars.
+            </p>
+            <div class="customer-type-button-cont">
+              <button class="brand-button-light">
+                <a>View features</a>
+              </button>
+            </div>
+          </div>
+          <div class="customer-type">
+            <div class="customer-type-img-cont">
+              <img src="/img/enterprise-image.png" alt="Enterprise" />
+            </div>
+            <h3>Enterprise</h3>
+            <p class="type-fix">
+              Manage your entire organization’s scheduling needs securely.
+            </p>
+            <div class="customer-type-button-cont">
+              <button class="brand-button-light">
+                <a>View features</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="sell-point-3">
+          <div class="sell-point-3-img-cont">
+            <img src="/img/sell-point-3.png" alt="" />
+          </div>
+          <div class="sell-point-3-content">
+            <h2>Stay in control</h2>
+            <p>
+              Instead of sharing your calendar, just share an invite or your
+              Booking Page. You control who can book, when.
+            </p>
+            <button class="brand-button-dark">
+              <a>Try it free</a>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="Arrow right icon"
+                aria-hidden="true"
+                data-testid="at-icon"
+                class="try-arrow"
+              >
+                <g clip-path="url(#arrow-right_svg__clip0)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 12a1 1 0 011-1h19.586l-6.293-6.293a1 1 0 111.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 01-1.414-1.414L20.586 13H1a1 1 0 01-1-1z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath>
+                    <path fill="currentColor" d="M0 0h24v24H0z"></path>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <small class="sub-text">No credit card required</small>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="sell-point-4">
+          <h2>Made to collaborate with your tools, too</h2>
+          <p>Doodle integrates directly into your favorite apps.</p>
+          <a href="#" class="link">See all integrations</a>
+        </div>
+      </section>
+      <section>
+        <div class="sell-point-outro">
+          <h2>Kick off the next great collaboration with Doodle.</h2>
+          <p>Get started now</p>
+          <button class="brand-button-dark content-button">
+            <a>Try it free</a>
+          </button>
+          <small class="sub-text">No credit card required</small>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-logo">
+            <svg
+              width="129"
+              height="24"
+              viewBox="0 0 129 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Doodle Logo"
+              aria-hidden="true"
+              data-testid="at-logo"
+              class="dist__SvgDoodleLogo-sc-ob0vd6-17 irIyLU"
+            >
+              <path
+                d="M21.252 24a.61.61 0 00.612-.606V17.85H6.389V6.15H.612A.61.61 0 000 6.757v16.637A.61.61 0 00.612 24h20.64z"
+                fill="#0A5C48"
+              ></path>
+              <path
+                d="M27.64 17.85a.61.61 0 00.612-.607V.607A.61.61 0 0027.64 0H7a.61.61 0 00-.611.607V6.15h15.475v11.7h5.776z"
+                fill="#33B6FF"
+              ></path>
+              <path
+                d="M45.264 21.981c6.479 0 10.234-4.575 10.234-9.947 0-5.371-3.784-9.947-10.234-9.947h-7.569v19.894h7.569zM42.34 5.952h2.494c3.956 0 5.877 2.928 5.877 6.082 0 3.155-1.92 6.082-5.877 6.082H42.34V5.953zM64.555 22.35c4.73 0 7.655-3.04 7.655-7.218s-2.924-7.219-7.655-7.219c-4.759 0-7.683 3.041-7.683 7.22 0 4.177 2.924 7.218 7.683 7.218zm0-3.665c-2.092 0-3.297-1.478-3.297-3.553s1.205-3.552 3.297-3.552c2.064 0 3.297 1.477 3.297 3.552s-1.233 3.553-3.297 3.553zM81.353 22.35c4.73 0 7.655-3.04 7.655-7.218s-2.924-7.219-7.655-7.219c-4.759 0-7.683 3.041-7.683 7.22 0 4.177 2.924 7.218 7.683 7.218zm0-3.665c-2.092 0-3.296-1.478-3.296-3.553s1.204-3.552 3.296-3.552c2.065 0 3.297 1.477 3.297 3.552s-1.233 3.553-3.297 3.553zM101.196 10.244c-.745-1.393-2.322-2.33-4.329-2.33-4.013 0-6.565 3.126-6.565 7.218 0 4.121 2.38 7.219 6.508 7.219 1.92 0 3.641-.938 4.386-2.302v1.932h4.358V2.087h-4.358v8.157zm-3.124 8.497c-2.036 0-3.297-1.534-3.297-3.609s1.261-3.58 3.296-3.58c2.179 0 3.297 1.62 3.297 3.58 0 1.99-1.118 3.61-3.296 3.61zM112.238 21.981V2.087h-4.386v19.894h4.386zM129 14.422c0-3.866-2.924-6.509-7.225-6.509-4.501 0-7.454 2.729-7.454 7.22 0 4.575 2.896 7.218 7.598 7.218 3.669 0 6.45-1.79 6.88-4.49h-4.3c-.373.852-1.233 1.221-2.58 1.221-1.95 0-3.154-.966-3.24-2.756h10.206c.086-.768.115-1.194.115-1.904zm-10.321-.796c.029-1.677 1.175-2.785 3.068-2.785 1.863 0 2.895.966 2.924 2.785h-5.992z"
+                fill="#0A0B0C"
+              ></path>
+            </svg>
+          </div>
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                Company
+                <ul>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Careers</a>
+                  </li>
+                  <li>
+                    <a href="#">TX Ventures</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Popular Features
+                <ul>
+                  <li>
+                    <a href="#">Booking page</a>
+                  </li>
+                  <li>
+                    <a href="#">Group polls</a>
+                  </li>
+                  <li>
+                    <a href="#">1:1 Meetings</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Learn
+                <ul>
+                  <li>
+                    <a href="#">Case Studies</a>
+                  </li>
+                  <li>
+                    <a href="#">Research & Reports</a>
+                  </li>
+                  <li>
+                    <a href="#">Webinars</a>
+                  </li>
+                  <li>
+                    <a href="#">Tutorials</a>
+                  </li>
+                  <li>
+                    <a href="#">Security</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Support
+                <ul>
+                  <li>
+                    <a href="#">Help Center</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact Sales</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-bottom-links">
+            <li>
+              <a href="#">Legal Notice</a>
+            </li>
+            <li>
+              <a href="#">Privacy Settings</a>
+            </li>
+          </ul>
+          <div class="social-links">
+            <a href="https://www.facebook.com/DoodleAG" target="_blank">
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="facebook"
+                aria-hidden="true"
+                data-testid="at-icon"
+                class="social-facebook"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M.5 9.999c0 4.45 3.25 8.15 7.5 8.9l.05-.04a4.4 4.4 0 01-.05-.01v-6.35H5.75v-2.5H8v-2c0-2.25 1.45-3.5 3.5-3.5.65 0 1.35.1 2 .2v2.3h-1.15c-1.1 0-1.35.55-1.35 1.25v1.75h2.4l-.4 2.5h-2v6.35a4.048 4.048 0 01-.05.01l.05.04c4.25-.75 7.5-4.45 7.5-8.9 0-4.95-4.05-9-9-9s-9 4.05-9 9z"
+                  fill="#0A0B0C"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/3199137/" target="_blank">
+              <svg
+                width="15"
+                height="16"
+                viewBox="0 0 15 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="linkedin"
+                aria-hidden="true"
+                data-testid="at-icon"
+                class="social-linkedin"
+              >
+                <path
+                  d="M2.052 4.418a1.778 1.778 0 100-3.555 1.778 1.778 0 000 3.555zM5.458 5.732h2.946v1.35s.8-1.599 2.975-1.599c1.94 0 3.548.956 3.548 3.87v6.144h-3.053v-5.4c0-1.719-.918-1.908-1.617-1.908-1.451 0-1.7 1.252-1.7 2.133v5.175h-3.1V5.732zM.502 5.732h3.1v9.765h-3.1V5.732z"
+                  fill="#0A0B0C"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/doodletweet" target="_blank">
+              <svg
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="twitter"
+                aria-hidden="true"
+                data-testid="at-icon"
+                class="social-twitter"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.162 4.075c.005.15.007.3.007.45 0 4.544-3.197 9.79-9.043 9.79-1.796 0-3.466-.572-4.873-1.546.249.027.502.048.758.048 1.49 0 2.86-.552 3.948-1.479-1.39-.02-2.565-1.022-2.97-2.385a2.908 2.908 0 001.437-.061C1.971 8.579.875 7.189.875 5.519v-.04c.429.251.92.408 1.44.428C1.463 5.287.902 4.231.902 3.04c0-.627.156-1.22.431-1.73C2.9 3.392 5.242 4.762 7.884 4.905a3.745 3.745 0 01-.082-.784c0-1.9 1.423-3.44 3.179-3.44.914 0 1.74.415 2.319 1.083a5.965 5.965 0 002.02-.831 3.398 3.398 0 01-1.4 1.9 5.96 5.96 0 001.827-.538 6.792 6.792 0 01-1.585 1.779z"
+                  fill="#0A0B0C"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
